@@ -1,0 +1,415 @@
+body { font-family: "Montserrat", sans-serif;
+color: #111;
+background-color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+/* --------------------- header --------------------*/
+.logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+    color: #111;
+}
+
+.logo-accent {
+    font-style: italic;
+}
+
+.header-item-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #111;
+    cursor: pointer;
+}
+
+.header-item-link:hover,
+.header-item-link:focus,
+.header-item-link:active {
+   color: #fd9222;
+}
+.title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111111;
+}
+.title-accent {
+    color: #fd9222;
+}
+
+/* --------------------------------------------------*/
+/* --------------------- section 1 hero --------------*/
+
+.hero {
+    background-color: rgba(17, 17, 17, 0.6);
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+}
+
+.hero-button {
+    background-color: #fd9222;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 100px;
+    width: 144px;
+    height: 45px;
+    cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus,
+.hero-button:active {
+    background-color: #fcf1e0;
+    color: #fd9222;
+}
+
+.hero-link-made {
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    width: 183px;
+    height: 45px;
+    text-align: center;
+    padding: 14px 40px;
+    cursor: pointer;
+}
+.hero-link-made:hover,
+.hero-link-made:focus,
+.hero-link-made:active {
+    border: 1px solid #fd9222;
+    color: #fd9222;
+}
+
+
+.hero-link-scroll {
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: -0.03em;
+        color: #ffffff;
+        cursor: pointer;
+}
+
+/* --------------------------------------------------*/
+/* ------------- section 2 Benefits------------------*/
+
+.benefits-title {
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+           
+}
+
+.benefits-list {
+    background: #1e1823;
+}
+.benefits-list-item {
+    width: 308px;
+}
+.benefits-subtitle {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+}
+.benefits-text {
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* --------------------------------------------------*/
+/* --------------- Section 3 Taste -------------------*/
+/* 
+.taste {}
+
+.taste-title {} */
+
+.taste-text {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #111111;
+}
+
+/* .taste-list {}
+
+.taste-list-item {}
+
+.taste-item-image {} */
+
+.taste-subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+.orange {
+    color: #fff;
+    background-color: #fd9222;
+}
+
+.white {
+    color: #111111
+}
+
+.black {
+    color: #fff;
+    background-color: #1e1823;
+}
+
+/* --------------------------------------------------*/
+/* --------------- section 4 made -------------------*/
+
+/* .made {}
+
+.made-title {}
+
+.made-image {} */
+
+.made-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #111111;
+}
+
+/* .made-list {} */
+
+.made-text {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: #111111;
+}
+
+/* --------------------------------------------------*/
+/* --------------- section 5 products ---------------*/
+
+/* .products {}
+
+.products-title {}
+
+.products-list {} */
+
+.products-item {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* .products-image {} */
+
+.products-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.products-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.products-btn {
+    font-weight: 600;
+    font-size: 14px;
+    color: #111111;
+    background-color: #fafafa;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+        border-radius: 100px;
+        width: 94px;
+        height: 33px;
+        cursor: pointer;
+}
+
+/* --------------------------------------------------*/
+/* --------------- section 6 sellers-----------------*/
+
+/* .sellers {}
+
+.sellers-title {}
+
+.sellers-list {} */
+
+.sellers-item {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* .sellers-image {} */
+
+.sellers-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111111;
+    text-align: center;
+    
+}
+
+/* --------------------------------------------------*/
+/* -------------- section 7 revievs -----------------*/
+
+/* .loved {}
+
+.loved-title {}
+
+.title-list {} */
+
+.loved-item {
+    text-align: center;
+}
+
+/* .loved-images {} */
+
+.loved-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    color: #111;
+}
+
+.loved-text {
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.loved-btn {
+    border: 1px solid #fd9222;
+        border-radius: 100px;
+        width: 222px;
+        height: 50px;
+        font-weight: 600;
+            font-size: 18px;
+            color: #111;
+            cursor: pointer;
+}
+.loved-btn:hover,
+.loved-btn:focus,
+.loved-btn:active {
+    background-color: #fd9222;
+    color: #ffffff;
+}
+/* --------------------------------------------------*/
+/* --------------------- footer --------------------*/
+
+.footer {
+    background-color: #1e1823;
+}
+
+.footer-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    color:#ffffff;
+}
+
+.title-accent {
+    color: #fd9222;
+}
+
+.footer-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* .footer-soc-item {}
+
+.footer-soc-link {}
+
+.footer-soc-icon {}
+
+.footer-contacts {} */
+
+.footer-contacts-link {
+    font-style: normal;
+    font-size: 14px;
+        line-height: 1.29;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #fff;
+}
+
+/* .footer-menu {}
+
+.footer-menu-list {}
+
+.footer-list-item {} */
+
+.footer-item-link {
+font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+
+.footer-item-link:hover,
+.footer-item-link:focus,
+.footer-item-link:active {
+    color: #fd9222;
+}
+/* .footer-input {} */
+
+
+
+.footer-btn {
+    background-color: #fd9222;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 100px;
+    width: 144px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.footer-btn:hover,
+.footer-btn:focus,
+.footer-btn:active {
+    background-color: #fcf1e0;
+    color: #fd9222;
+}
