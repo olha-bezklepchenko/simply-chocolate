@@ -659,7 +659,6 @@
             </ul>
           </nav>
           <div class="footer-forma">
-            <!-- enter your email -->
             <label for="user-email"></label>
             <input
             id="user-email"
@@ -673,7 +672,8 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <!-- modal -->
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn"><svg width="14" height="14" class="modal-close-icon">
           <use href="./images/icons.svg#icon-x-close"></use>
@@ -683,27 +683,36 @@
           <div class="modal-field">
             <label for="user-name" class="modal-label">Name</label>
             <div class="input-wrap">
-              <input type="text" class="modal-input" id="user-name" name="user-name" required>
+              <input type="text" class="modal-input" id="user-name" name="user-name" minlength="2">
               <svg class="modal-input-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+              <svg class="modal-icon-error" width="24" height="24">
+                <use href="./images/icons.svg#icon-error"></use>
               </svg>
             </div>
           </div>
           <div class="modal-field">
             <label for="user-email" class="modal-label">Email</label>
             <div class="input-wrap">
-              <input type="email" class="modal-input" id="user-email" name="user-email" required>
+              <input type="email" class="modal-input" id="user-email" name="user-email">
               <svg class="modal-input-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              <svg class="modal-icon-error" width="24" height="24">
+                <use href="./images/icons.svg#icon-error"></use>
               </svg>
             </div>
           </div>
           <div class="modal-field">
             <label for="user-phone" class="modal-label">Phone number</label>
             <div class="input-wrap">
-              <input type="tel" class="modal-input" id="user-phone" name="user-phone" required>
+              <input type="tel" class="modal-input" id="user-phone" name="user-phone" minlength="13">
               <svg class="modal-input-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <svg class="modal-icon-error" width="24" height="24">
+                <use href="./images/icons.svg#icon-error"></use>
               </svg>
             </div>
           </div>
