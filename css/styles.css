@@ -63,7 +63,6 @@ address {
 /* --------------------- header --------------------*/
 
 header {
-    padding: 24px 0 32px;
 }
 
 .header-container {
@@ -96,6 +95,10 @@ header {
     display: flex;
     gap: 24px ;
 }
+.header-list-item {
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
 
 .header-item-link {
     font-weight: 500;
@@ -105,6 +108,8 @@ header {
     color: #111;
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
 .header-item-link:hover,
@@ -116,6 +121,7 @@ header {
 .header-soc-list {
     display: flex;
     gap: 14px;
+    align-items: center;
 }
 
 .soc-item {}
@@ -225,7 +231,7 @@ align-items: center;
         align-items: center;
         gap: 14px;
         transition-property: color;
-        transition-duration: 200ms;
+        transition-duration: 300ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
 
@@ -237,26 +243,20 @@ align-items: center;
     align-items: center;
     background-color: #ffffff;
     border-radius: 100%;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: background-color;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #fd9222;
    }
 
-.hero-icon-scroll {
-    fill: #fd9222;
-    transition-property:fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- 
-    
+.hero-icon-scroll { 
  }
 
  .hero-link-scroll:hover,
  .hero-link-scroll:focus {
     color: #fd9222;
  }
+
 .hero-link-scroll:hover .hero-scroll, 
-.hero-link-scroll:hover .hero-icon-scroll, 
-.hero-link-scroll:focus .hero-scroll,
-.hero-link-scroll:focus .hero-icon-scroll {
+.hero-link-scroll:focus .hero-scroll {
     background-color: #fd9222;
     fill: #fff;
 }
@@ -347,7 +347,6 @@ align-items: center;
 .taste-title {
     max-width: 412px;
     margin: 0 auto 28px;
-
 } 
 
 .taste-text {
@@ -384,47 +383,48 @@ align-items: center;
     border: 1px solid #fd9222;
 }
 
-.taste-item-arrow {
+.taste-btn-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
     top: 14px;
     right: 14px;
-}
-.taste-item-arrow:hover {
-    box-shadow: 1 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background-color: transparent;
     cursor: pointer;
 }
-
-.taste-item:active .taste-overlay {
-    transform: translateX(0);
+.taste-btn-arrow:hover {
+    box-shadow: 1 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
+.taste-btn-arrow:hover .taste-item-icon {
+    stroke: #fd9222 ;
+    background-color: #ffffff;
+}
+
+.taste-item:nth-child(2n) .taste-btn-arrow:hover .taste-item-icon {
+    stroke: #ffffff ;
+    background-color: #fd9222;
+}
+.taste-item:nth-child(4n+3) .taste-btn-arrow:hover .taste-item-icon {
+    stroke:  #1e1823;
+    background-color: #fff;
+}
+.taste-btn-arrow:focus + .taste-overlay,
+.taste-btn-arrow:active + .taste-overlay {
+    transform: translateX(0);
+}
 
 .taste-item-icon {
     fill: transparent;
     stroke: #FAFAFA;
+    border-radius: 50%;
 }
 .taste-item:nth-child(2n) .taste-item-icon {
     stroke: #fd9222;
-}
-
-.taste-item-image {
-    margin-bottom: 32px;
-}
-
-.taste-item:nth-child(4n+3) {
-    color: #fff;
-    background-color: #1e1823;
-}
-
-.taste-subtitle {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
 }
 
 .taste-overlay {
@@ -433,11 +433,16 @@ align-items: center;
     right: 0;
     width: 100%;
     height: 100%;
-    padding: 20px 15px;
+    padding: 20px 10px 20px 15px;
     border-radius: 15px;
     background-color: #ffffff;
     transform: translateX(100%);
     transition: transform 300ms linear;
+    overflow: auto;
+}
+
+.taste-overlay::-webkit-scrollbar {
+    width: 5px;
 }
 
 .taste-overlay-subtitle {
@@ -454,7 +459,6 @@ align-items: center;
     gap: 6px;
     margin-bottom: 14px;
     align-content: center;
-    
 }
 
 .taste-overlay-btn {
@@ -483,6 +487,27 @@ align-items: center;
     letter-spacing: -0.02em;
     color: #111111;
 }
+
+
+
+.taste-item-image {
+    margin-bottom: 32px;
+}
+
+.taste-item:nth-child(4n+3) {
+    color: #fff;
+    background-color: #1e1823;
+}
+
+.taste-subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+
 
 
 /* --------------------------------------------------*/
@@ -706,7 +731,7 @@ flex-shrink: 0;
 }
 
 .loved-title {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 .title-list {
@@ -716,11 +741,21 @@ flex-shrink: 0;
 }
 
 .loved-item {
+    position: relative;
     text-align: center;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+border-radius: 15px;
+box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+background: #fff;
 width: calc((100% - 56px) / 3);
+padding: 56px 24px 24px;
 }
 
 .loved-images {
+    position: absolute;
+top: 0;
+left: 50%;
+transform: translate(-50%, -50%);
         margin: 0 auto 18px;
 }
 
@@ -911,6 +946,7 @@ border: 1.50px solid rgba(255, 255, 255, 0.15);
     border-radius: 100px;
     cursor: pointer;
     padding: 18px 32px;
+    outline: transparent;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
@@ -950,7 +986,8 @@ border: 1.50px solid rgba(255, 255, 255, 0.15);
 position: absolute;
     border-radius: 15px;
     width: 517px;
-   min-height: 794px;
+   max-height: 90%;
+   overflow: auto;
     background-color: #fafafa;
     top: 50%;
     left: 50%;
