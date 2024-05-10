@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Chocolate</title>
     <link
@@ -77,6 +78,11 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="header-mob-burger">
+          <svg class="header-mob-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- main  -->
@@ -84,28 +90,33 @@
       <!--section 1 hero-->
 
       <section class="hero">
-        <div class="container hero-wrap">
-          <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
-          </h1>
-
-          <div class="hero-btn-wrap">
-            <button type="button" class="hero-button">Buy now</button>
-
-            <a href="#made" class="hero-link-made">How it’s made</a>
-            <div class="scroll">
-              <a href="#taste" class="hero-link-scroll"
-                >scroll down
-                <div class="hero-scroll">
-                  <svg class="hero-icon-scroll" width="22" height="22">
-                    <use href="./images/icons.svg#icon-arrow-bottom"></use>
-                  </svg>
+        <div class="container">
+          <div class="hero-wrap">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                Treat yourself or a loved one to our finest ingredients for a moment
+                of pure delight!
+              </h1>
+    
+              <div class="hero-btn-wrap">
+                <button type="button" class="hero-button">Buy now</button>
+    
+                <a href="#made" class="hero-link-made">How it’s made</a>
+                <div class="scroll">
+                  <a href="#footer" class="hero-link-scroll"
+                    >scroll down
+                    <div class="hero-scroll">
+                      <svg class="hero-icon-scroll" width="22" height="22">
+                        <use href="./images/icons.svg#icon-arrow-bottom"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
+
       </section>
 
       <!--section 2 Benefits-->
@@ -199,11 +210,12 @@
               </div>
 
               <img
-                src="./images/img-1.png"
+              srcset="./images/taste-1.png 1x, ./images/taste-1@2x.png 2x"
+                src="./images/taste-1.png"
                 class="taste-item-image"
                 alt="pieces of chocolate"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
               />
               <h3 class="taste-subtitle">MILK CHOCOLATE</h3>
 
@@ -224,11 +236,12 @@
                   <p class="taste-overlay-text">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.</p>
               </div>
               <img
-                src="./images/img-2.png"
+              srcset="./images/taste-2.png 1x, ./images/taste-2@2x.png 2x"
+                src="./images/taste-2.png"
                 class="taste-item-image"
                 alt="a bottle of milk"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
               />
               <h3 class="taste-subtitle">MILK</h3>
             </li>
@@ -247,11 +260,12 @@
                   <p class="taste-overlay-text">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy fats, and plant protein. Plus, they’re great on their own.</p>
               </div>
               <img
-                src="./images/img-3.png"
+              srcset="./images/taste-3.png 1x, ./images/taste-3@2x.png 2x"
+                src="./images/taste-3.png"
                 class="taste-item-image"
                 alt="four hazelnuts"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
               />
               <h3 class="taste-subtitle">NUTS</h3>
             </li>
@@ -267,14 +281,15 @@
                     <p class="taste-overlay-btn">sweet chocolate</p>
                     <p class="taste-overlay-benefits">the benefits</p>
                   </div>
-                  <p class="taste-overlay-text">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow.</p>
+                  <p class="taste-overlay-text semi">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow.</p>
               </div>
               <img
-                src="./images/img-4.png"
+              srcset="./images/taste-4.png 1x, ./images/taste-4@2x.png 2x"
+                src="./images/taste-4.png"
                 class="taste-item-image"
                 alt="chocolate drops"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
               />
               <h3 class="taste-subtitle">SEMI - SWEET CHOCOLATE</h3>
             </li>
@@ -293,11 +308,12 @@
                   <p class="taste-overlay-text">Cocoa is a natural product obtained from the fruits of the cocoa tree (Theobroma cacao). This tropical fruit contains beans, from which cocoa mass, cocoa powder and chocolate are made. The history of the use of cocoa goes back to ancient times. Already in ancient Mesoamerica, the Mayan and Aztec civilizations used cocoa in their culture and rituals</p>
               </div>
               <img
-                src="./images/img-5.png"
+              srcset="./images/taste-5.png 1x, ./images/taste-5@2x.png 2x"
+                src="./images/taste-5.png"
                 class="taste-item-image"
                 alt="two cocoa beans"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
               />
               <h3 class="taste-subtitle">CACAO</h3>
             </li>
@@ -316,11 +332,12 @@
                   <p class="taste-overlay-text">Raspberry is a tasty and aromatic berry plant that is popular all over the world. It belongs to the pink family and grows in many regions, including North America, Europe and Asia. Raspberries have many varieties and color variations, from red to yellow and black.</p>
               </div>
               <img
-                src="./images/img-6.png"
+              srcset="./images/taste-6.png 1x, ./images/taste-6@2x.png 2x"
+                src="./images/taste-6.png"
                 class="taste-item-image"
                 alt="four ripe raspberries"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
               />
               <h3 class="taste-subtitle">RASPBERRY</h3>
             </li>
@@ -339,11 +356,12 @@
                   <p class="taste-overlay-text">Coconut oil is a vegetable oil obtained from the pulp of the fruit of the coconut palm (Cocos nucifera). It is widely used in cooking, cosmetics and medicine, thanks to its numerous useful properties. Coconut oil is a source of saturated fats, especially medium-chain fatty acids, such as lauric acid.</p>
               </div>
               <img
-                src="./images/img-7.png"
+              srcset="./images/taste-7.png 1x, ./images/taste-7@2x.png 2x"
+                src="./images/taste-7.png"
                 class="taste-item-image"
                 alt="cracked coconut"
-                width="214"
-                height="160"
+                width="236"
+                height="176"
               />
               <h3 class="taste-subtitle">COCONUT OIL</h3>
             </li>
@@ -359,13 +377,19 @@
             HOW IT’S <span class="title-accent">MADE?</span>
           </h2>
           <div class="made-content">
-            <img
-              src="./images/image.jpg"
+            <picture>
+              <source  media="(min-width: 1168px)" srcset="./images/made.jpg 1x, ./images/made@2x.jpg 2x">
+              <source  media="(min-width: 768px)" srcset="./images/made-tab.jpg 1x, ./images/made-tab@2x.jpg 2x">
+              <source  media="(max-width: 767px)" srcset="./images/made-mob.jpg 1x, ./images/made-mob@2x.jpg 2x">
+              <img
+              src="./images/made.jpg"
               class="made-image"
               alt="melted chocolate"
               width="600"
               height="400"
             />
+            </picture>
+         
             <div class="made-content-text">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
@@ -410,7 +434,7 @@
 
       <!-- section 5 products -->
 
-      <section class="products">
+      <section class="products" id="products">
         <div class="container">
           <h2 class="products-title title">
             OUR <span class="title-accent">PRODUCTS</span>
@@ -418,6 +442,7 @@
           <ul class="products-list">
             <li class="products-item">
               <img
+                srcset="./images/products-1.jpg 1x, ./images/products-1@2x.jpg 2x"
                 src="./images/products-1.jpg"
                 class="products-image"
                 alt="Dark chocolate in an orange wrapper"
@@ -428,6 +453,7 @@
             </li>
             <li class="products-item">
               <img
+              srcset="./images/products-2.jpg 1x, ./images/products-2@2x.jpg 2x"
                 src="./images/products-2.jpg"
                 class="products-image"
                 alt="Milk chocolate in a purple wrapper"
@@ -438,6 +464,7 @@
             </li>
             <li class="products-item">
               <img
+              srcset="./images/products-3.jpg 1x, ./images/products-3@2x.jpg 2x"
                 src="./images/products-3.jpg"
                 class="products-image"
                 alt="Dark chocolate in an azure wrapper"
@@ -448,6 +475,7 @@
             </li>
             <li class="products-item">
               <img
+              srcset="./images/products-4.jpg 1x, ./images/products-4@2x.jpg 2x"
                 src="./images/products-4.jpg"
                 class="products-image"
                 alt="Dark chocolate in an yellow wrapper"
@@ -458,6 +486,7 @@
             </li>
             <li class="products-item">
               <img
+              srcset="./images/products-5.jpg 1x, ./images/products-5@2x.jpg 2x"
                 src="./images/products-5.jpg"
                 class="products-image"
                 alt="Milk chocolate in a blue wrapper"
@@ -468,6 +497,7 @@
             </li>
             <li class="products-item">
               <img
+              srcset="./images/products-6.jpg 1x, ./images/products-6@2x.jpg 2x"
                 src="./images/products-6.jpg"
                 class="products-image"
                 alt="Milk chocolate in an amber color wrapper"
@@ -478,6 +508,7 @@
             </li>
             <li class="products-item">
               <img
+              srcset="./images/products-7.jpg 1x, ./images/products-7@2x.jpg 2x"
                 src="./images/products-7.jpg"
                 class="products-image"
                 alt="Dark chocolate in a green wrapper"
@@ -488,6 +519,7 @@
             </li>
             <li class="products-item">
               <img
+              srcset="./images/products-8.jpg 1x, ./images/products-8@2x.jpg 2x"
                 src="./images/products-8.jpg"
                 class="products-image"
                 alt="White chocolate in an gray wrapper"
@@ -502,7 +534,7 @@
 
       <!-- section 6 sellers -->
 
-      <section class="sellers">
+      <section class="sellers" id="sellers">
         <div class="container">
           <h2 class="sellers-title title">
             <span class="title-accent">TOP</span> SELLERS
@@ -581,7 +613,7 @@
           <h2 id="loved" class="loved-title title">
             <span class="title-accent">chocolate </span>is loved
           </h2>
-          <ul class="title-list">
+          <ul class="loved-list">
             <li class="loved-item">
               <img
                 src="./images/reviews-1.jpg"
@@ -633,7 +665,7 @@
     </main>
     <!-- footer  -->
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer-top">
           <p class="footer-title">
@@ -682,16 +714,17 @@
             </ul>
           </div>
 
-          <address class="footer-contacts">
+          <div class="footer-contacts-container">
             <p class="footer-text">Contact us</p>
-            <a class="footer-contacts-link" href="tel:+380684439426"
-              >+380 (68) 443-94-26</a
-            >
-            <br />
-            <a class="footer-contacts-link" href="mailto:simplychoc@gmail.com"
-              >simplychoc@gmail.com</a
-            >
-          </address>
+            <address class="footer-contacts">
+             <a class="footer-contacts-link" href="tel:+380684439426"
+                >+380 (68) 443-94-26</a>
+              <a class="footer-contacts-link" href="mailto:simplychoc@gmail.com"
+                >simplychoc@gmail.com</a
+              >
+            </address>
+          </div>
+
         </div>
         <div class="footer-bottom">
           <nav class="footer-menu">
@@ -703,19 +736,25 @@
                 <a href="#made" class="footer-item-link">How it’s made?</a>
               </li>
               <li class="footer-list-item">
+                <a href="#products" class="footer-item-link">Our products</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#sellers" class="footer-item-link">Top sellers</a>
+              </li>
+              <li class="footer-list-item">
                 <a href="#loved" class="footer-item-link">Chocolate is loved</a>
               </li>
             </ul>
           </nav>
           <div class="footer-forma">
-            <label for="user-email"></label>
+            <label>
             <input
-            id="user-email"
               type="email"
               class="footer-input"
               name="user-email"
               placeholder="Enter your email"
             />
+          </label>
             <button type="button" class="footer-btn">Subscribe</button>
           </div>
         </div>
@@ -727,7 +766,7 @@
         <button type="button" class="modal-close-btn"><svg width="14" height="14" class="modal-close-icon">
           <use href="./images/icons.svg#icon-x-close"></use>
         </svg></button>
-        <p class="modal-title title">LEAVE A REVIEW ABOUT <span class="title-accent">OUR CHOCOLATE</span></p>
+        <p class="modal-title title">LEAVE A REVIEW ABOUT<span class="title-accent modal-accent">OUR CHOCOLATE</span></p>
         <form class="modal-form">
           <div class="modal-field">
             <label for="user-name" class="modal-label">Name</label>
@@ -775,9 +814,9 @@
                 <span class="privacy-icon-box">
                   <svg class="privacy-icon" width="10" height="10">
                     <use href="./images/icons.svg#icon-accept"></use></svg>
-                </span>
-                I accept the terms and conditions of the 
-                    <a href="" class="privacy-link">Privacy Policy</a>
+                </span><span class="privacy-text-box">I accept the terms and conditions of the 
+                  <a href="" class="privacy-link">Privacy Policy</a></span>
+                
               </label>
             </div>
             <button type="submit" class="modal-btn">Send</button>
