@@ -125,7 +125,7 @@ address {
 .mobile-menu {
   width: 220px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   background-color: #1e1823;
